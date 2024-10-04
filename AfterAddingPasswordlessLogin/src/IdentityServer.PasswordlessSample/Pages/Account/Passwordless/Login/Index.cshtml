@@ -1,0 +1,12 @@
+﻿@page
+@model IdentityServer.PasswordlessSample.Pages.Account.Passwordless.Login.IndexModel
+
+if you do not have an account, please click <a class="btn btn-secondary" asp-page="/account/passwordless/registration/index">here</a> to register.
+<h2>Login</h2>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="EmailAddress"></label> 
+        <input asp-for="EmailAddress" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
