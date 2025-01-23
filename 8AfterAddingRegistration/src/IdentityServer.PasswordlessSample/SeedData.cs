@@ -1,10 +1,10 @@
-﻿using System.Security.Claims;
-using IdentityModel;
-using IdentityServer.PasswordlessSample.Data;
+﻿using IdentityServer.PasswordlessSample.Data;
 using IdentityServer.PasswordlessSample.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using System.Security.Claims;
+using Duende.IdentityModel;
 
 namespace IdentityServer.PasswordlessSample;
 

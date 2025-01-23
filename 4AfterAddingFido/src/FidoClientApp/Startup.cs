@@ -31,7 +31,7 @@ namespace FidoClientApp
                 .AddCookie("cookie")
                 .AddOpenIdConnect("oidc", options =>
                 {
-                    options.Authority = "https://localhost:5001";
+                    options.Authority = "https://localhost:5003";
                     options.ClientId = "mvc";
                     options.SignInScheme = "cookie";
                     options.RequireHttpsMetadata = false;

@@ -10,7 +10,7 @@ namespace IdentityServer.PasswordlessSample.Pages.Account.Passwordless.Registrat
 public class RegisterModel
     (IFidoAuthentication fidoAuthentication, UserManager<ApplicationUser> userManager) : PageModel
 {
-    [BindProperty(SupportsGet = true)] public Base64FidoRegistrationChallenge Challenge { get; set; }
+    [BindProperty(SupportsGet = true)] public new Base64FidoRegistrationChallenge Challenge { get; set; }
 
     [BindProperty(SupportsGet = true)] public String ReturnUrl { get; set; }
 

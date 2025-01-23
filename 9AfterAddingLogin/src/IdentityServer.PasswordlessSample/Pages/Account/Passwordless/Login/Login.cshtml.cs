@@ -11,7 +11,7 @@ public class LoginModel(IFidoAuthentication fidoAuthentication,
     UserManager<ApplicationUser> userManager,
     SignInManager<ApplicationUser> signInManager) : PageModel
 {
-    [BindProperty(SupportsGet = true)] public Base64FidoAuthenticationChallenge Challenge { get; set; }
+    [BindProperty(SupportsGet = true)] public new Base64FidoAuthenticationChallenge Challenge { get; set; }
 
     [BindProperty(SupportsGet = true)] public String ReturnUrl { get; set; }
 
@@ -33,7 +33,7 @@ public class LoginModel(IFidoAuthentication fidoAuthentication,
             return BadRequest("No user exists with that id.");
         }
 
-        signInManager.SignInAsync(user, false);
+        await signInManager.SignInAsync(user, false);
 
         return new EmptyResult();
     }

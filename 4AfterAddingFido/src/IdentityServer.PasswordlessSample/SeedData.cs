@@ -1,5 +1,5 @@
 ﻿using System.Security.Claims;
-using IdentityModel;
+using Duende.IdentityModel;
 using IdentityServer.PasswordlessSample.Data;
 using IdentityServer.PasswordlessSample.Models;
 using Microsoft.AspNetCore.Identity;
